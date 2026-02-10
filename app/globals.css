@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffbf8;
-  --foreground: #171717;
+  --background: #fdf8f4;
+  --foreground: #161316;
 
-  /* Paleta de marca */
-  --brand-dark: #151217;
+  /* Paleta de marca, inspirada en salones premium */
+  --brand-dark: #111018;
   --brand-gold: #d4a373;
   --brand-rose: #f1b8c9;
-  --brand-nude: #f6dfcc;
-  --brand-soft: #f9efe8;
+  --brand-nude: #f4ddc7;
+  --brand-soft: #f9eee5;
 }
 
 @theme inline {

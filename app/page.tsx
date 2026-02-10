@@ -10,24 +10,43 @@ import { Button } from "@/components/ui/Button";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <header className="sticky top-0 z-30 border-b border-black/5 bg-background/80 backdrop-blur-md">
+      <header className="sticky top-0 z-30 border-b border-black/5 bg-background/90 backdrop-blur-md">
+        <div className="border-b border-black/5 bg-brand-dark text-[11px] text-brand-soft">
+          <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-1.5">
+            <span>Maipú, Santiago de Chile</span>
+            <span className="hidden gap-2 md:inline-flex">
+              <span>Instagram · @salondanizaonat</span>
+              <span className="mx-1">·</span>
+              <span>WhatsApp para reservas</span>
+            </span>
+          </div>
+        </div>
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 text-xs md:text-sm">
-          <div className="flex items-baseline gap-2">
-            <span className="font-heading text-sm tracking-tight text-brand-dark md:text-base">
+          <div className="flex flex-col gap-0.5">
+            <span className="font-heading text-base tracking-tight text-brand-dark md:text-lg">
               DANIZA OÑAT / LAKSHMI
             </span>
-            <span className="hidden text-[11px] uppercase tracking-[0.22em] text-muted-foreground md:inline">
+            <span className="text-[11px] uppercase tracking-[0.23em] text-muted-foreground">
               Coloristas y estilistas profesionales
             </span>
           </div>
           <nav className="flex items-center gap-3">
-            <a href="#servicios" className="hidden text-xs text-muted-foreground md:inline">
+            <a
+              href="#servicios"
+              className="hidden text-xs text-muted-foreground hover:text-brand-dark md:inline"
+            >
               Servicios
             </a>
-            <a href="#agendar" className="hidden text-xs text-muted-foreground md:inline">
+            <a
+              href="#agendar"
+              className="hidden text-xs text-muted-foreground hover:text-brand-dark md:inline"
+            >
               Agendar
             </a>
-            <a href="#contacto" className="hidden text-xs text-muted-foreground md:inline">
+            <a
+              href="#contacto"
+              className="hidden text-xs text-muted-foreground hover:text-brand-dark md:inline"
+            >
               Contacto
             </a>
             <a href="#agendar" className="ml-1">

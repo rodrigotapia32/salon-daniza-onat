@@ -5,32 +5,35 @@ import { ServiceCard } from "../ui/ServiceCard";
 
 export const ServicesSection: React.FC = () => {
   return (
-    <SectionContainer id="servicios" className="bg-background text-foreground">
+    <SectionContainer
+      id="servicios"
+      className="bg-background text-foreground border-t border-black/5"
+    >
       <SectionTitle
-        eyebrow="Servicios principales"
-        title="Especialistas en color, corte y tratamientos capilares"
-        subtitle="Trabajamos con productos profesionales y diagnósticos personalizados para cuidar tu pelo y lograr el resultado que tienes en mente."
+        eyebrow="Servicios"
+        title="Todo lo que necesitas para un cambio de look completo"
+        subtitle="Estas son las líneas de servicio principales. En un proyecto real se pueden detallar tiempos, valores y fotos de cada servicio."
       />
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2">
         <ServiceCard
           name="Coloración profesional"
-          description="Color clásico, retoque de raíces o cambio completo, siempre cuidando la salud de tu pelo y tu tono de piel."
+          description="Color clásico, retoque de raíces o cambio total con enfoque en colorimetría profesional y cuidado del cabello."
           fromPrice="$25.000"
         />
         <ServiceCard
           name="Corte & styling"
-          description="Cortes con forma, capas, flequillos y peinados que se adaptan a tu rutina diaria y tipo de cabello."
+          description="Cortes femeninos con forma, capas, flequillos y peinados pensados en tu tipo de rostro y rutina diaria."
           fromPrice="$18.000"
         />
         <ServiceCard
           name="Balayage / Iluminaciones"
-          description="Técnicas de iluminación suaves y degradadas para un efecto natural, luminoso y de bajo mantenimiento."
+          description="Técnicas de balayage, babylights e iluminaciones suaves para lograr un efecto luminoso, elegante y de bajo mantenimiento."
           fromPrice="$55.000"
         />
         <ServiceCard
           name="Tratamientos capilares"
-          description="Hidratación profunda, brillo, reconstrucción y tratamientos anti-frizz para recuperar la textura y suavidad de tu pelo."
+          description="Hidrataciones profundas, tratamiento anti-frizz y reconstrucción para recuperar brillo, suavidad y fuerza en tu pelo."
           fromPrice="$22.000"
         />
       </div>
