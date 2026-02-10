@@ -4,8 +4,20 @@ import { Button } from "../ui/Button";
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-brand-dark text-white">
-      {/* Fondo tipo banda oscura con degradados suaves, estilo salón premium */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,221,199,0.16),transparent_60%),radial-gradient(circle_at_bottom,_rgba(226,186,160,0.28),transparent_55%)]" />
+      {/* Video de fondo del salón */}
+      <video
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/salondebelleza.mp4" type="video/mp4" />
+      </video>
+
+      {/* Capa oscura y degradados para mantener legibilidad */}
+      <div className="pointer-events-none absolute inset-0 bg-black/55" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,221,199,0.18),transparent_60%),radial-gradient(circle_at_bottom,_rgba(226,186,160,0.32),transparent_55%)] mix-blend-soft-light" />
 
       <div className="relative z-10 mx-auto flex min-h-[80vh] max-w-5xl flex-col gap-10 px-4 pb-16 pt-24 md:flex-row md:items-center md:pb-20 md:pt-28">
         {/* Columna texto principal */}
